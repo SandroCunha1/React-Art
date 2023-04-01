@@ -1,6 +1,6 @@
 import styles from './Header.module.scss'
 import search from './search.png'
-import logo from './Logo2.png'
+import logo from '../../../public/Logo2.png'
 
 const Header = () => {
 

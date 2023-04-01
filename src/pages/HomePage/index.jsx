@@ -1,4 +1,4 @@
-import Header from "../../components/Header/inde";
+import Header from "../../components/Header";
 import Menu from "../../components/Menu";
 
 
@@ -7,7 +7,7 @@ export default function HomePage(){
     return(
         <>
         <Header/>
-        <Menu/>
+        <Menu Home={true}/>
         </>
     )
 }

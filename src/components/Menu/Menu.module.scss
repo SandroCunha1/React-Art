@@ -1,0 +1,15 @@
+.menu {
+    width: 200px;
+  
+    &__lista {
+      padding-left: 10px;
+      margin: 0;
+      height: 276px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  
+  
+  }

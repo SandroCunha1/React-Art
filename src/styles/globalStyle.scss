@@ -1,9 +1,38 @@
+@import-normalize;
+@import "./variaveis";
+
 body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image: linear-gradient(#7e5166, #814e8a);
- 
+    //background-image: linear-gradient(#7e5166, #814e8a);
+    background-image: linear-gradient($rosa-escuro, $rosa-claro);
     box-sizing: border-box;
   }
   
+  body::-webkit-scrollbar {
+    width: 5px;
+  }
+  body::-webkit-scrollbar-track {
+    background: linear-gradient(#2f0433, #481875);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #601e60a5;
+    border-radius: 20px;
+  }
+
+@font-face {
+  font-family: "GandhiSansRegular";
+  src: local("GandhiSansRegular"),
+  url("../assets/fontes/GandhiSans-Regular.otf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GandhiSansBold";
+  src: local("GandhiSansBold"),
+  url("../assets/fontes/GandhiSans-Bold.otf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}

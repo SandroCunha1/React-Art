@@ -1,3 +1,4 @@
+@import "../../styles/variaveis";
  .item {
     display: flex;
     justify-content: flex-start;
@@ -10,11 +11,11 @@
   transform: scale(1.1);
     .item__img{
       transition: 0.3s;
-    background-color: #b998cf;   
+    background-color: $rosa-hover;   
   }
   a{
     transition: 0.6s;
-    color: #b998cf;
+    color: $rosa-hover;
   }
     }
   &__img {
@@ -22,7 +23,7 @@
     width: 20px;
     height: 25px;
     cursor: pointer;
-    background-color: #8f8ce6;
+    background-color: $azul-claro;
     padding: 5px;
     border-radius: 10px;
 
@@ -36,7 +37,7 @@
     width: 20px;
     height: 25px;
     cursor: pointer;
-    background-color: #b998cf; 
+    background-color: $rosa-hover; 
     padding: 5px;
     border-radius: 10px;
   }
@@ -46,14 +47,14 @@
   a {
     text-decoration: none;
     font-size: 1.125rem;
-    color: #d9d9d9;
-    font-family: "GandhiSansRegular"
+    color: $text-color;
+    font-family: $Font-regular
   }
 
   &__linkfill {
     color: #b998cf !important;
     font-weight: 700;
-    font-family: "GandhiSansRegular"
+    font-family: $Font-bold
   }
 }
 

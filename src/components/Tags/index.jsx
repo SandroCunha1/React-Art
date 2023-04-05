@@ -1,15 +1,18 @@
 import React from 'react'
 import style from './Tags.module.scss'
-function Tags() {
+import fotos from '../Gallery/fotos.json'
+function Tags({tags, filtraFotos, setItens}) {
+  console.log(tags)
   return (
     <div className={style.tags}>
     <p>Filtre pro Tags : </p>
     <ul className={style.tags__lista}>
-        <li>10x10</li>
-        <li>16x15</li>
-        <li>20x20</li>
-        <li>20x30</li>
-        <li>30x30</li>
+        {
+          tags.map(tag => {
+            return <li key={tag} onClick={() => filtraFotos(tag)}>{tag}</li>
+          })
+        }
+        <li onClick={() => setItens(fotos)}>Todas</li>
     </ul>
     </div>
   )
